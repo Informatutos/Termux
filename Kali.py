@@ -53,4 +53,7 @@ def installKali() :
     os.system("bash kali.sh")
     print("Kali Linux successful install"+B)
     choiX()
-choiX()
+try :
+    choiX()
+except KeyboardInterrupt :
+    sys.exit(R+"END")
